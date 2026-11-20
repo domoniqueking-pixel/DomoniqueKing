@@ -5,31 +5,38 @@ A single static page, `index.html`, with all CSS inline in a `<style>` block. No
 ## Content rules
 
 - Put the owner's text in exactly as written. Don't rephrase, trim, or "fix" it.
-- Page order: top bar → hero statement → About → Clips → Contact.
+- Page order: masthead (name + tagline) → nav bar → About and Contact side by side → Clips → footer.
 - Clips go in `<ul class="clips">`, one `<li>` each: linked headline, then "— Publication, Month Year".
-- Contact email: domoniqueking@washsun.com, shown only as the plain line "You can reach me at domoniqueking@washsun.com." No "Get in Touch" link (the owner asked for it to be removed).
+  While there are none, keep it as `<ul class="clips"></ul>` with nothing between the tags; CSS then shows
+  "Stories will be added here soon." That note disappears on its own once a story is added.
+- Contact: the plain line "You can reach me at domoniqueking@washsun.com." inside the contact box.
+  No "Get in Touch" link and no "Email me" button (the owner asked for the Get in Touch link to be removed).
 
 ## Style (keep this on every change)
 
-Colors are a dark olive-green page with cream text; layout and type are a minimal editorial reporter portfolio.
+Green-and-cream colors in a newspaper-style layout: big masthead, nav bar between rules, labeled sections.
 
 **Colors** (CSS variables on `:root`; use these, don't add new ones without reason):
 - `--bg` `#3e4235`: dark olive green, the page background
-- `--bg-deep` `#34382c`: slightly darker green, for any band or panel that needs to stand apart
-- `--text` `#f1eee6`: warm cream, for all main text
-- `--muted` `#c9c6bb`: softer cream, for section labels and secondary text
-- `--rule` `rgba(241,238,230,0.22)`: thin divider lines
-- `--accent` `#c4c8cc`: pale blue-gray, for hover states and buttons
+- `--bg-deep` `#34382c`: darker green, for the top stripe, the contact box and the empty-clips note
+- `--text` `#f1eee6`: warm cream, for all main text and the filled section-label tabs
+- `--muted` `#c9c6bb`: softer cream, for the rules around the nav bar, under labels and above the footer, and for secondary text
+- `--rule` `rgba(241,238,230,0.22)`: faint lines between clip items
+- `--accent` `#c4c8cc`: pale blue-gray, for hover states, the contact box's top border and the clips note's left border
 - One color scheme only: no separate light/dark mode.
 
-**Type**:
-- Serif `Cormorant Garamond` (Google Fonts), light weight 300–400, for the name, the hero statement, and body text.
-- Sans `Jost` 300–400, small, for nav links and section labels only. Section labels are uppercase with wide letter-spacing (~0.18em).
-- The hero statement is large (clamp ~2.4–3.75rem), weight 300, tight line-height (~1.15), and reads as one sentence: "[Name] is a [role] covering [beat]."
+**Type** (Google Fonts):
+- `Instrument Serif`: the name in the masthead only, uppercase, very large (clamp ~3–7rem), tight line-height.
+- `Newsreader`: everything you read. The tagline is semibold (600) at ~1.4rem. The About paragraph is a ~1.3rem lede. Body is ~1.06rem.
+- `Inter` 500–600: nav links, beats, and the section-label tabs (uppercase, slight letter-spacing).
+- `IBM Plex Mono`: small uppercase, letter-spaced text for the "Reporting on" label and the footer.
 
 **Layout**:
-- Top bar: name at left, small nav (About, Clips, Contact) at right.
-- Lots of empty space; left-aligned content; max width ~64rem; body text kept to a ~36rem column.
-- The page ends with the contact section: just the email line, in body text.
-- Flat design: no shadows, gradients, rounded cards, or decorative icons.
+- A 6px `--bg-deep` stripe at the very top of the page.
+- Masthead: the name at left, the tagline at right (max ~16rem wide). They stack on narrow screens.
+- Nav bar with a rule above and below. At left: "Reporting on" followed by Policy, Courts and Education (plain text, not links). At right: About, Clips and Contact (anchor links).
+- Section labels: a filled cream tab with green text, sitting on a full-width `--muted` rule.
+- From ~56rem wide, About and Contact sit side by side (about 1.65 : 1); below that they stack. Clips spans the full width underneath.
+- Footer: a rule, then "© [year] Domonique King" in mono.
+- Max content width ~72rem. Flat design: no shadows, gradients, rounded corners, or icons.
 - Must work at phone width: 16px side margins and no sideways scrolling.
