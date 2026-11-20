@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Domonique King</title>
+  <meta name="description" content="Domonique King, reporting fellow covering policy, courts, and education.">
+  <style>
+    :root {
+      --bg: #fbfaf7;
+      --text: #1d1d1b;
+      --muted: #6b6a66;
+      --rule: #dedbd3;
+      --accent: #8a2c1d;
+      --placeholder-bg: #f3f0e8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161615;
+        --text: #ecebe7;
+        --muted: #a09e98;
+        --rule: #34332f;
+        --accent: #e0846f;
+        --placeholder-bg: #201f1d;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.125rem;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 4rem 1rem 5rem;
+    }
+    header { border-bottom: 1px solid var(--rule); padding-bottom: 2rem; margin-bottom: 2.5rem; }
+    h1 {
+      font-size: clamp(2.25rem, 7vw, 3.25rem);
+      line-height: 1.1;
+      margin: 0 0 0.75rem;
+      font-weight: 700;
+    }
+    .beat {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 1rem;
+      color: var(--muted);
+    }
+    section { margin-bottom: 2.75rem; }
+    h2 {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      margin: 0 0 1rem;
+    }
+    .placeholder {
+      border: 1px dashed var(--rule);
+      background: var(--placeholder-bg);
+      color: var(--muted);
+      padding: 1rem 1.25rem;
+      border-radius: 4px;
+      font-style: italic;
+      margin: 0;
+    }
+    .clips { list-style: none; padding: 0; margin: 0; }
+    .clips li { padding: 0.75rem 0; border-bottom: 1px solid var(--rule); }
+    a { color: var(--accent); }
+    footer {
+      border-top: 1px solid var(--rule);
+      padding-top: 1.5rem;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Domonique King</h1>
+      <p class="beat">Reporting fellow covering policy, courts, and education</p>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <!-- ABOUT: replace the placeholder paragraph below with your bio. -->
+      <p class="placeholder">[About text coming soon]</p>
+    </section>
+
+    <section id="clips">
+      <h2>Clips</h2>
+      <!-- CLIPS: add stories inside the list below, one <li> each, e.g.
+        <li><a href="https://example.com/story">Story headline</a> — Publication, Month Year</li>
+      -->
+      <ul class="clips">
+      </ul>
+    </section>
+
+    <footer id="contact">
+      <p>You can reach me at <a href="mailto:domoniqueking@washsun.com">domoniqueking@washsun.com</a>.</p>
+    </footer>
+  </main>
+</body>
+</html>
