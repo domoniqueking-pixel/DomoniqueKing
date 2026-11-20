@@ -7,7 +7,7 @@ A single static page, `index.html`, with all CSS inline in a `<style>` block. No
 - Put the owner's text in exactly as written. Don't rephrase, trim, or "fix" it.
 - Page order: top bar → hero statement → About → Clips → Contact.
 - Clips go in `<ul class="clips">`, one `<li>` each: linked headline, then "— Publication, Month Year".
-- Contact email: domoniqueking@washsun.com (shown as "Get in Touch →" plus a plain line with the address).
+- Contact email: domoniqueking@washsun.com, shown only as the plain line "You can reach me at domoniqueking@washsun.com." No "Get in Touch" link (the owner asked for it to be removed).
 
 ## Style (keep this on every change)
 
@@ -23,13 +23,13 @@ Colors are a dark olive-green page with cream text; layout and type are a minima
 - One color scheme only: no separate light/dark mode.
 
 **Type**:
-- Serif `Cormorant Garamond` (Google Fonts), light weight 300–400, for the name, the hero statement, body text, and the contact link.
+- Serif `Cormorant Garamond` (Google Fonts), light weight 300–400, for the name, the hero statement, and body text.
 - Sans `Jost` 300–400, small, for nav links and section labels only. Section labels are uppercase with wide letter-spacing (~0.18em).
 - The hero statement is large (clamp ~2.4–3.75rem), weight 300, tight line-height (~1.15), and reads as one sentence: "[Name] is a [role] covering [beat]."
 
 **Layout**:
 - Top bar: name at left, small nav (About, Clips, Contact) at right.
 - Lots of empty space; left-aligned content; max width ~64rem; body text kept to a ~36rem column.
-- The contact section ends the page with a big serif "Get in Touch →" link, underlined.
+- The page ends with the contact section: just the email line, in body text.
 - Flat design: no shadows, gradients, rounded cards, or decorative icons.
 - Must work at phone width: 16px side margins and no sideways scrolling.
