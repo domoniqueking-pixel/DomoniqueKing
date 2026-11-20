@@ -120,6 +120,21 @@
     }
     .lede { font-size: 1.3rem; line-height: 1.6; margin: 0; max-width: 42rem; }
 
+    /* Headshot beside the About text; stacks above it on narrow screens */
+    .about-body { display: grid; grid-template-columns: 1fr; gap: 1.5rem; align-items: start; }
+    @media (min-width: 36rem) {
+      .about-body { grid-template-columns: 13rem minmax(0, 1fr); gap: 1.75rem; }
+    }
+    .headshot {
+      display: block;
+      width: 100%;
+      max-width: 13rem;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      background: var(--bg-deep);
+    }
+
     .contact-box {
       background: var(--bg-deep);
       border-top: 4px solid var(--accent);
@@ -186,7 +201,10 @@
     <div class="wrap columns">
       <section id="about">
         <h2 class="label"><span>About</span></h2>
-        <p class="lede">Domonique is a reporter at The Washington Sun. She graduated with a degree in journalism and political science from Mercer University, where she worked as a writer for the university’s marketing communications department. She previously interned at The Current and The Atlanta Journal-Constitution.</p>
+        <div class="about-body">
+          <img class="headshot" src="headshot.webp" width="800" height="800" alt="Domonique King">
+          <p class="lede">Domonique is a reporter at The Washington Sun. She graduated with a degree in journalism and political science from Mercer University, where she worked as a writer for the university’s marketing communications department. She previously interned at The Current and The Atlanta Journal-Constitution.</p>
+        </div>
       </section>
 
       <section id="contact">

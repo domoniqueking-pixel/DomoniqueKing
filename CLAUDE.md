@@ -36,6 +36,7 @@ Green-and-cream colors in a newspaper-style layout: big masthead, nav bar betwee
 - Masthead: the name at left, the tagline at right (max ~16rem wide). They stack on narrow screens.
 - Nav bar with a rule above and below. At left: "Reporting on" followed by Policy, Courts and Education (plain text, not links). At right: About, Clips and Contact (anchor links).
 - Section labels: a filled cream tab with green text, sitting on a full-width `--muted` rule.
+- About: the headshot (`headshot.webp`, square, 13rem, no rounding or border) sits left of the About text. Below ~36rem wide it stacks above the text.
 - From ~56rem wide, About and Contact sit side by side (about 1.65 : 1); below that they stack. Clips spans the full width underneath.
 - Footer: a rule, then "© [year] Domonique King" in mono.
 - Max content width ~72rem. Flat design: no shadows, gradients, rounded corners, or icons.
