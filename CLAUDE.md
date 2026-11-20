@@ -6,7 +6,8 @@ A single static page, `index.html`, with all CSS inline in a `<style>` block. No
 
 - Put the owner's text in exactly as written. Don't rephrase, trim, or "fix" it.
 - Page order: masthead (name + tagline) → nav bar → About and Contact side by side → Clips → footer.
-- Clips go in `<ul class="clips">`, one `<li>` each: linked headline, then "— Publication, Month Year".
+- Clips go in `<ul class="clips">`, newest first, one `<li>` each: `<a href="URL">Headline</a> — Outlet, Month D, YYYY`.
+  The headline is always exactly as published. Use the `add-clip` skill (`.claude/skills/add-clip/SKILL.md`) to add clips.
   While there are none, keep it as `<ul class="clips"></ul>` with nothing between the tags; CSS then shows
   "Stories will be added here soon." That note disappears on its own once a story is added.
 - Contact: the plain line "You can reach me at domoniqueking@washsun.com." inside the contact box.
